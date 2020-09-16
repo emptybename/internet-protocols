@@ -87,3 +87,16 @@ t8Fw6T8UV81pQfyhDkhebbz7+oiwldr1j2gHBB3L3RFTRsQCpaSnSBZ78Vme+DpDVJPvZdZUZHpzbbcq
 TLS uses a technology called public key encryption: there are two keys, a public key and a private key, and the public key is shared with client devices via the server's SSL certificate. When a client opens a connection with a server, the two devices use the public and private key to agree on new keys, called session keys, to encrypt further communications between them.
 
 All HTTP requests and responses are then encrypted with these session keys (this takes place at layer 6 in the OSI model), so that anyone who intercepts communications can only see a random string of characters, not the plaintext.
+
+
+
+```
+- HTTP URL in your browser's address bar is http:// and the HTTPS URL is https://.
+- HTTP is unsecured while HTTPS is secured.
+- HTTP sends data over port 80 while HTTPS uses port 443.
+- HTTP operates at application layer, while HTTPS operates at transport layer.
+- No SSL certificates are required for HTTP, with HTTPS it is required that you have an SSL certificate and it is signed by a CA.
+- HTTP doesn't require domain validation, where as HTTPS requires at least domain validation and certain certificates even require legal document validation.
+- No encryption in HTTP, with HTTPS the data is encrypted before sending.
+
+```
